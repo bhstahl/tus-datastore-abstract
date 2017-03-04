@@ -1,0 +1,29 @@
+{
+  "name": "tus-datastore-abstract",
+  "version": "0.0.1",
+  "description": "Abstract Data Store for the tus protocol node.js server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhstahl/tus-datastore-abstract.git"
+  },
+  "keywords": [
+    "tus",
+    "upload",
+    "tus",
+    "protocol",
+    "upload",
+    "protocol",
+    "upload",
+    "server"
+  ],
+  "author": "Ben Stahl <bhstahl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhstahl/tus-datastore-abstract/issues"
+  },
+  "homepage": "https://github.com/bhstahl/tus-datastore-abstract#readme"
+}
