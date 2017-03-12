@@ -1,0 +1,9 @@
+{
+    "extends": "@vimeo/eslint-config-player/es6",
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "camelcase": 0,
+    }
+}
