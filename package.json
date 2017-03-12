@@ -1,6 +1,6 @@
 {
   "name": "tus-datastore-abstract",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Abstract Data Store for the tus protocol node.js server",
   "repository": {
     "type": "git",
