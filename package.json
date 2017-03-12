@@ -2,10 +2,6 @@
   "name": "tus-datastore-abstract",
   "version": "0.0.1",
   "description": "Abstract Data Store for the tus protocol node.js server",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bhstahl/tus-datastore-abstract.git"
@@ -25,5 +21,41 @@
   "bugs": {
     "url": "https://github.com/bhstahl/tus-datastore-abstract/issues"
   },
-  "homepage": "https://github.com/bhstahl/tus-datastore-abstract#readme"
+  "homepage": "https://github.com/bhstahl/tus-datastore-abstract#readme",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "NODE_ENV=test nyc --reporter=html --reporter=text ava"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/"
+  ],
+  "dependencies": {
+    "crypto-rand": "0.0.2"
+  },
+  "devDependencies": {
+    "@vimeo/eslint-config-player": "^5.0.0",
+    "ava": "^0.18.2",
+    "babel-eslint": "^7.1.1",
+    "coveralls": "^2.12.0",
+    "eslint": "^3.17.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "nyc": "^10.1.2"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ],
+    "source": [
+      "lib/**/*.js"
+    ]
+  }
 }
